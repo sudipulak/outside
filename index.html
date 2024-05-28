@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment Outside</title>
+    <!-- Owl Carousel  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Font Awesome  -->
     <link
       rel="stylesheet"
@@ -23,77 +31,273 @@
           <img src="./assets/logo.svg" alt="Logo Image" class="logo" />
         </div>
         <div class="menu-toggler">
-          <i class="fa fa-bars"></i>
+          <img src="./assets/Menu.svg" alt="" class="menu-toggler-open" />
+          <img src="./assets/close.svg" alt="" class="menu-toggler-close" />
         </div>
-        <ul class="nav-menu-mobile">
-          <li class="menu-item">
-            <a href="#" class="active">Mealtime</a>
-            <i class="fa fa-arrow-right"></i>
-            <div class="sub-menu">
-              <div class="sub-menu-header">
-                <p>
-                  <a href="#" class="back-btn">
-                    <img src="./assets/angle-left.svg" alt="" />
-                  </a>
-                  <span>Shop Mealtime</span>
-                </p>
-                <a href="#" class="close-btn">
-                  <img src="./assets/close.svg" alt="" />
-                </a>
+        <div class="nav-menu-mobile-wrapper">
+          <div class="best-seller">
+            <div class="best-seller-header">
+              <p>Best Seller</p>
+              <a href="#">Shop all</a>
+            </div>
+            <div class="owl-carousel">
+              <div class="card">
+                <div class="img-box">
+                  <img src="./assets/sliderimg/img1.png" alt="" />
+                </div>
               </div>
-              <ul>
-                <li>High Chair</li>
-                <li>Booster</li>
-                <li>Tableware & Bibs</li>
-                <li>Mealtime Accessories</li>
-                <li>Bundle & Save</li>
-                <li>All Meals</li>
-              </ul>
-              <div class="featured-section">
-                <p>
-                  <span>Featured Mealtime</span>
-                  <a href="#"> Shop all </a>
-                </p>
+              <div class="card">
+                <div class="img-box">
+                  <img src="./assets/sliderimg/img2.png" alt="" />
+                </div>
+              </div>
+              <div class="card">
+                <div class="img-box">
+                  <img src="./assets/sliderimg/img3.png" alt="" />
+                </div>
+              </div>
+              <div class="card">
+                <div class="img-box">
+                  <img src="./assets/sliderimg/img4.png" alt="" />
+                </div>
               </div>
             </div>
-          </li>
-          <li class="menu-item">
-            <a href="#">Playtime</a>
-          </li>
-          <li class="menu-item">
-            <a href="#">Bathtime</a>
-          </li>
-          <li class="menu-item">
-            <a href="#">The Play Boxes <span>New!</span></a>
-          </li>
-          <li class="menu-item">
-            <a href="#">Gifts</a>
-          </li>
-          <li class="menu-item">
-            <a href="#">Best Sellers</a>
-          </li>
-        </ul>
-        <ul class="nav-menu-desktop">
-          <li class="menu-item">
-            <a href="#" class="active">Mealtime</a>
-          </li>
-          <li class="menu-item">
-            <a href="#">Playtime</a>
-          </li>
-          <li class="menu-item">
-            <a href="#">Bathtime</a>
-          </li>
-          <li class="menu-item">
-            <a href="#">The Play Boxes <span>New!</span></a>
-          </li>
-          <li class="menu-item">
-            <a href="#">Gifts</a>
-          </li>
-          <li class="menu-item">
-            <a href="#">Best Sellers</a>
-          </li>
-        </ul>
+          </div>
+          <ul class="nav-menu-mobile">
+            <li class="menu-item">
+              <a href="#" class="active">Mealtime</a>
+              <i class="fa fa-arrow-right"></i>
+              <div class="sub-menu">
+                <div class="sub-menu-header">
+                  <p>
+                    <a href="#" class="back-btn">
+                      <img src="./assets/angle-left.svg" alt="" />
+                    </a>
+                    <span>Shop Mealtime</span>
+                  </p>
+                  <a href="#" class="close-btn">
+                    <img src="./assets/close.svg" alt="" />
+                  </a>
+                </div>
+                <ul>
+                  <li><a href="#">High Chair</a></li>
+                  <li><a href="#">Booster</a></li>
+                  <li><a href="#">Tableware & Bibs</a></li>
+                  <li><a href="#">Mealtime Accessories</a></li>
+                  <li><a href="#">Bundle & Save</a></li>
+                  <li><a href="#">All Meals</a></li>
+                </ul>
+                <div class="featured-section">
+                  <p class="featured-section-header">
+                    <span>Featured Mealtime</span>
+                    <a href="#"> Shop all </a>
+                  </p>
+                  <div class="owl-carousel">
+                    <div class="card">
+                      <div class="img-box">
+                        <img src="./assets/sliderimg/img1.png" alt="" />
+                      </div>
+                      <div class="card-content">
+                        <p class="card-category">BEST SELLER</p>
+                        <p class="card-title">The Chair</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="img-box">
+                        <img src="./assets/sliderimg/img2.png" alt="" />
+                      </div>
+                      <div class="card-content">
+                        <p class="card-category">BEST SELLER</p>
+                        <p class="card-title">First Bites Full Kit</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="img-box">
+                        <img src="./assets/sliderimg/img3.png" alt="" />
+                      </div>
+                      <div class="card-content">
+                        <p class="card-category">BEST SELLER</p>
+                        <p class="card-title">Suction Plate</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item">
+              <a href="#">Playtime</a>
+              <i class="fa fa-arrow-right"></i>
+              <div class="sub-menu">
+                <div class="sub-menu-header">
+                  <p>
+                    <a href="#" class="back-btn">
+                      <img src="./assets/angle-left.svg" alt="" />
+                    </a>
+                    <span>Shop Mealtime</span>
+                  </p>
+                  <a href="#" class="close-btn">
+                    <img src="./assets/close.svg" alt="" />
+                  </a>
+                </div>
+                <ul>
+                  <li><a href="#">Play Time</a></li>
+                  <li><a href="#">High Chairs</a></li>
+                  <li><a href="#">Boosters</a></li>
+                  <li><a href="#">All Playtime</a></li>
+                </ul>
+                <div class="featured-section">
+                  <p class="featured-section-header">
+                    <span>Featured Mealtime</span>
+                    <a href="#"> Shop all </a>
+                  </p>
+                  <div class="owl-carousel">
+                    <div class="card">
+                      <div class="img-box">
+                        <img src="./assets/sliderimg/img1.png" alt="" />
+                      </div>
+                      <div class="card-content">
+                        <p class="card-category">BEST SELLER</p>
+                        <p class="card-title">The Chair</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="img-box">
+                        <img src="./assets/sliderimg/img2.png" alt="" />
+                      </div>
+                      <div class="card-content">
+                        <p class="card-category">BEST SELLER</p>
+                        <p class="card-title">First Bites Full Kit</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="img-box">
+                        <img src="./assets/sliderimg/img3.png" alt="" />
+                      </div>
+                      <div class="card-content">
+                        <p class="card-category">BEST SELLER</p>
+                        <p class="card-title">Suction Plate</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item">
+              <a href="#">Bathtime</a>
+              <i class="fa fa-arrow-right"></i>
+              <div class="sub-menu">
+                <div class="sub-menu-header">
+                  <p>
+                    <a href="#" class="back-btn">
+                      <img src="./assets/angle-left.svg" alt="" />
+                    </a>
+                    <span>Shop Mealtime</span>
+                  </p>
+                  <a href="#" class="close-btn">
+                    <img src="./assets/close.svg" alt="" />
+                  </a>
+                </div>
+                <ul>
+                  <li><a href="#">Bath Time</a></li>
+                  <li><a href="#">High Chairs</a></li>
+                  <li><a href="#">Boosters</a></li>
+                  <li><a href="#">Tableware & Bibs</a></li>
+                  <li><a href="#">Mealtime Accessories</a></li>
+                  <li><a href="#">High Chairs</a></li>
+                  <li><a href="#">Bundle & Save</a></li>
+                  <li><a href="#">All Bathtime</a></li>
+                </ul>
+                <div class="featured-section">
+                  <p class="featured-section-header">
+                    <span>Featured Mealtime</span>
+                    <a href="#"> Shop all </a>
+                  </p>
+                  <div class="owl-carousel">
+                    <div class="card">
+                      <div class="img-box">
+                        <img src="./assets/sliderimg/img1.png" alt="" />
+                      </div>
+                      <div class="card-content">
+                        <p class="card-category">BEST SELLER</p>
+                        <p class="card-title">The Chair</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="img-box">
+                        <img src="./assets/sliderimg/img2.png" alt="" />
+                      </div>
+                      <div class="card-content">
+                        <p class="card-category">BEST SELLER</p>
+                        <p class="card-title">First Bites Full Kit</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="img-box">
+                        <img src="./assets/sliderimg/img3.png" alt="" />
+                      </div>
+                      <div class="card-content">
+                        <p class="card-category">BEST SELLER</p>
+                        <p class="card-title">Suction Plate</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item">
+              <a href="#">The Play Boxes <span>New!</span></a>
+              <i class="fa fa-arrow-right"></i>
+            </li>
+            <li class="menu-item">
+              <a href="#">Gifts</a>
+              <i class="fa fa-arrow-right"></i>
+            </li>
+            <li class="menu-item">
+              <a href="#">Best Sellers</a>
+              <i class="fa fa-arrow-right"></i>
+            </li>
+            <li class="menu-item">
+              <a href="#">Shop all</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-menu-desktop-wrapper">
+          <ul class="nav-menu-desktop">
+            <li class="menu-item">
+              <a href="#" class="active">Mealtime</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">Playtime</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">Bathtime</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">The Play Boxes <span>New!</span></a>
+            </li>
+            <li class="menu-item">
+              <a href="#">Gifts</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">Best Sellers</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
+
+    <!-- Scripts  -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
