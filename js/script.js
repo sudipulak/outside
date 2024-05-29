@@ -38,28 +38,42 @@ $(".nav-menu-mobile-wrapper .back-btn").click((e) => {
   e.stopPropagation();
   $(".nav-menu-mobile-wrapper .sub-menu").addClass("hide-menu");
 });
-
+$(".nav-menu-mobile-wrapper .close-btn").click((e) => {
+  e.stopPropagation();
+  $(".nav-menu-mobile-wrapper .sub-menu").addClass("hide-menu");
+});
 // Slider
-$(".nav-menu-mobile-wrapper .owl-carousel").owlCarousel({
+$("header .owl-carousel").owlCarousel({
   loop: true,
   autoplay: true,
   margin: 14,
   stagePadding: 45,
-  nav: "",
   responsiveClass: true,
+  nav: true,
   responsive: {
     0: {
       items: 2,
-      nav: true,
-    },
-    600: {
-      items: 3,
       nav: false,
     },
-    1000: {
-      items: 5,
+    768: {
+      nav: false,
+      items: 3,
+    },
+    1024: {
       nav: true,
       loop: false,
+      items: 4,
+      stagePadding: 0,
     },
   },
 });
+
+// Playbox year toggle
+
+$(".nav-menu-desktop-wrapper .sub-menu .box2").hide();
+function toggleYear(box) {
+  $(".box").hide();
+  $(`.box${box}`).show();
+  $(".nav-menu-desktop-wrapper .col-quarter ul a").removeClass("active");
+  $(`.nav-menu-desktop-wrapper .col-quarter ul a.${box}`).addClass("active");
+}
