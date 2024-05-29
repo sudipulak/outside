@@ -560,9 +560,9 @@ header nav .nav-menu-desktop-wrapper {
   }
 
   .nav-menu-desktop-wrapper .owl-nav button.owl-next:before {
-    -webkit-transform: rotate(-135deg) translate(6px, -5px);
-    -ms-transform: rotate(-135deg) translate(6px, -5px);
-    transform: rotate(-135deg) translate(6px, -5px);
+    -webkit-transform: rotate(-135deg) translate(8px, -5px);
+    -ms-transform: rotate(-135deg) translate(8px, -5px);
+    transform: rotate(-135deg) translate(8px, -5px);
   }
 
   .nav-menu-desktop-wrapper .owl-nav button.owl-next.disabled:before,

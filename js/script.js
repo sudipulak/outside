@@ -45,7 +45,6 @@ $(".nav-menu-mobile-wrapper .close-btn").click((e) => {
 // Slider
 $("header .owl-carousel").owlCarousel({
   loop: true,
-  autoplay: true,
   margin: 14,
   stagePadding: 45,
   responsiveClass: true,
